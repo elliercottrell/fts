@@ -1,0 +1,196 @@
+@font-face {
+  font-family: "typewriter_condensed";
+  src: url(fonts/typewcond_regular.otf) format("opentype");
+}
+
+body {
+  background: linear-gradient(to top, #94cecd 70%, white 100%);
+  background-repeat: no-repeat;
+  height: 150vh;
+}
+/* navigation - all pages */
+
+.main {
+  list-style: none;
+  text-align: center;
+  padding: 0px;
+  margin-top: 100px;
+}
+
+.main li {
+  display: inline;
+  padding: 10px;
+  font-family: "typewriter_condensed";
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.navLinks {
+  text-decoration: none;
+  color: #000;
+  transition: 300ms ease-in-out;
+}
+
+.navLinks:hover {
+  color: white;
+  cursor: pointer;
+}
+
+h1 {
+  font-family: "Helvetica Neue";
+  font-size: 38px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.fts {
+  color: #000;
+  text-decoration: none;
+}
+.fts:hover {
+  color: #000;
+}
+
+/* home page */
+
+.bodyButtons {
+  margin-top: 100px;
+}
+.frontPage {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: "typewriter_condensed";
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 20px;
+  background-color: transparent;
+  border: solid 1px #000;
+  transition: 300ms ease-in-out;
+}
+
+.frontPage:hover {
+  color: white;
+  border: solid 1px #fff;
+  cursor: pointer;
+}
+
+/* menu-page */
+
+.menuBody {
+  text-align: center;
+  margin: 20px 50px;
+}
+
+.container {
+  margin-left: -10px;
+}
+
+li {
+  list-style: none;
+  font-family: "typewriter_condensed";
+}
+
+.menuBody label {
+  font-family: "typewriter_condensed";
+  font-size: 20px;
+  display: block;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.black-content li,
+ul {
+  text-align: left;
+}
+
+.menuBody label:hover {
+  color: #fff;
+}
+.menuBody input:checked ~ .black-content {
+  max-height: 100%;
+}
+.menuBody input {
+  display: none;
+}
+.black-content {
+  max-height: 0;
+  overflow: hidden;
+  margin-left: -31px;
+  font-size: 13px;
+}
+.menuBody input:checked ~ .top-content {
+  max-height: 100%;
+}
+.menuBody input {
+  display: none;
+}
+.top-content {
+  max-height: 0;
+  overflow: hidden;
+  margin-left: -40px;
+}
+
+/* info page */
+h2 {
+  font-family: "Helvetica Neue";
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-family: "typewriter_condensed";
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 20px;
+  text-align: center;
+}
+
+.contact-us {
+  text-align: center;
+  margin: 0 auto;
+  font-family: "typewriter_condensed";
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+#contact-text-input,
+#msg {
+  padding: 5px;
+  border: 1px solid #000;
+  border-radius: 0px;
+  background: transparent;
+  margin: 10px;
+  color: #fff;
+}
+
+#submit {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: "typewriter_condensed";
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 20px;
+  background-color: transparent;
+  border: solid 1px #fff;
+  transition: 300ms ease-in-out;
+  color: #fff;
+}
+
+#submit:hover {
+  color: #fff;
+  border: solid 1px #fff;
+  cursor: pointer;
+}
+
+.fab {
+  color: #fff;
+}

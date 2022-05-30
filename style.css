@@ -196,3 +196,14 @@ p {
 .fab {
   color: #fff;
 }
+footer {
+  margin-top: 130px;
+}
+.sign-up {
+  border: 1px solid #fff;
+  padding: 10px;
+  margin: 0 auto;
+  text-align: center;
+  background: rgb(255, 255, 255, 0.5);
+  position: fixed;
+}

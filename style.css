@@ -97,8 +97,9 @@ li {
 }
 
 .menuBody label {
-  font-family: "typewriter_condensed";
-  font-size: 20px;
+  font-family: "Helvetica Neue";
+  font-weight: bold;
+  font-size: 13.5px;
   display: block;
   cursor: pointer;
   text-transform: uppercase;
@@ -107,6 +108,16 @@ li {
 .black-content li,
 ul {
   text-align: left;
+}
+hr {
+  color: white;
+  width: 90px;
+  height: 1px;
+  background-color: white;
+  opacity: 100;
+}
+.black-content li {
+  color: #ae8688;
 }
 
 .menuBody label:hover {

@@ -10,40 +10,52 @@ body {
 }
 /* navigation - all pages */
 
-.main {
-  list-style: none;
-  text-align: center;
-  padding: 0px;
-  margin-top: 100px;
-}
-
-.main li {
-  display: inline;
-  padding: 10px;
-  font-family: "typewriter_condensed";
+.navbar-brand {
+  font-family: "Helvetica Neue";
+  font-weight: 600;
   text-transform: uppercase;
-  font-weight: 300;
-  font-size: 20px;
+  font-size: 13px;
+}
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  border: none;
+  box-shadow: none;
 }
 
-.navLinks {
-  text-decoration: none;
-  color: #000;
-  transition: 300ms ease-in-out;
+.nav-link {
+  border-top: solid 1px #ae8688;
+  margin-left: 15px;
+  padding: 10px;
 }
 
-.navLinks:hover {
-  color: white;
-  cursor: pointer;
+.navbar-nav {
+  margin: 0 auto;
+}
+
+.navbar-nav a {
+  margin: 0px;
+  font-family: "Helvetica Neue";
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 13px;
 }
 
 h1 {
   font-family: "Helvetica Neue";
-  font-size: 38px;
+  font-size: 100px;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 50px;
+}
+h2 {
+  font-family: "Helvetica Neue";
+  font-size: 100px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 50px;
 }
 
 .fts {
@@ -59,16 +71,16 @@ h1 {
 .bodyButtons {
   margin-top: 100px;
 }
+
 .frontPage {
   color: #000;
   display: block;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   text-align: center;
   font-family: "typewriter_condensed";
   font-size: 20px;
   text-transform: uppercase;
-  padding: 20px;
   background-color: transparent;
   border: solid 1px #000;
   transition: 300ms ease-in-out;
@@ -78,6 +90,14 @@ h1 {
   color: white;
   border: solid 1px #fff;
   cursor: pointer;
+}
+
+#bookNow {
+  padding: 30px 48px;
+}
+
+#loyalty {
+  padding: 30px;
 }
 
 /* menu-page */
@@ -148,7 +168,7 @@ hr {
 }
 
 /* info page */
-h2 {
+h3 {
   font-family: "Helvetica Neue";
   font-size: 20px;
   font-weight: bold;
@@ -217,4 +237,20 @@ footer {
   text-align: center;
   background: rgb(255, 255, 255, 0.5);
   position: fixed;
+}
+
+@media (max-width: 960px) {
+  h1 {
+    display: none;
+  }
+}
+
+@media (min-width: 961px) {
+  h2 {
+    display: none;
+  }
+
+  .nav-link {
+    border-top: none;
+  }
 }

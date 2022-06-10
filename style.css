@@ -104,29 +104,37 @@ h2 {
 
 .menuBody {
   text-align: left;
-  margin: 20px 50px;
+  margin: 50px 30px;
 }
-
 .container {
-  margin-left: -10px;
+  padding: 0;
+  text-align: center;
 }
-
 li {
   list-style: none;
-  font-family: "typewriter_condensed";
+  font-family: "Helvetica Neue";
+  font-size: 13px;
+  font-weight: 200;
+  font-style: italic;
 }
 
+.bordered {
+  border: 1px solid #fff;
+  padding: 10px;
+  margin-top: 10px;
+}
 .menuBody label {
   font-family: "Helvetica Neue";
   font-weight: bold;
   font-size: 14px;
-  display: block;
   cursor: pointer;
   text-transform: uppercase;
 }
 
-.black-content li,
 ul {
+  text-align: left;
+}
+.black-content li {
   text-align: left;
 }
 hr {
@@ -165,6 +173,10 @@ hr {
   max-height: 0;
   overflow: hidden;
   margin-left: -50px;
+}
+
+.firstSection {
+  margin-top: 10px;
 }
 
 /* info page */
@@ -252,5 +264,27 @@ footer {
 
   .nav-link {
     border-top: none;
+  }
+
+  li {
+    list-style: none;
+    font-family: "Helvetica Neue";
+    font-size: 25px;
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  .menuBody label {
+    font-family: "Helvetica Neue";
+    font-weight: bold;
+    font-size: 40px;
+    display: block;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+
+  hr {
+    width: 230px;
+    height: 2px;
   }
 }

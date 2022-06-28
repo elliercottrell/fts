@@ -6,3 +6,8 @@ loyalty.addEventListener("click", function () {
     "top=150,left=200,width=350,height=450"
   );
 });
+
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}

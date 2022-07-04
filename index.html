@@ -49,15 +49,23 @@
         </div>
       </div>
     </nav>
-
+    <div class="toggle-switch">
+      <p class="toggleName" style="margin-right: 5px; font-size: 13px">
+        I COULD BE PINK
+      </p>
+      <input
+        type="checkbox"
+        id="switch"
+        class="toggled"
+        onclick="toggleSwitch()"
+      /><label for="switch"></label>
+    </div>
     <h1><a class="fts" href="index.html">For the Saints</a></h1>
     <h2><a class="fts" href="index.html">FTS</a></h2>
 
     <div class="bodyButtons">
-      <button class="frontPage" id="loyalty">loyalty card</button>
-
-      <div class="popup" onclick="myFunction()">
-        <button class="frontPage" id="voucher">voucher</button>
+      <div class="popup" onclick="myPopup()">
+        <button class="frontPage" id="loyalty">loyalty card</button>
         <span class="popuptext" id="myPopup">
           <h3 class="mt-2">FTS x Loopy Loyalty</h3>
           <h4>
@@ -67,9 +75,20 @@
             stamps everytime you accidentally need to grab a coffee 😉 - we
             know, we see you - download your card now !
           </h4>
+          <img
+            src="/images/Screenshot 2022-07-03 at 13.19.06.png"
+            style="max-width: 60px"
+          />
         </span>
       </div>
     </div>
+
+    <a
+      href="https://www.giftpro.co.uk/?gclid=CjwKCAjw_ISWBhBkEiwAdqxb9oNm9UJv_dPIjrNDSDydpBcWb3-Sh_fkBqphwwhEo0XEpmKy9KULwRoCHTsQAvD_BwE"
+      target="_blank"
+    >
+      <button class="frontPage" id="voucher">voucher</button></a
+    >
 
     <script src="app.js"></script>
   </body>

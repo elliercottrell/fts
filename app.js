@@ -1,13 +1,9 @@
-let loyalty = document.querySelector("#loyalty");
-loyalty.addEventListener("click", function () {
-  const popWin = window.open(
-    "popup.html",
-    "Popup",
-    "top=150,left=200,width=350,height=450"
-  );
-});
-
-function myFunction() {
-  var popup = document.getElementById("myPopup");
+function myPopup() {
+  let popup = document.getElementById("myPopup");
   popup.classList.toggle("show");
+}
+
+function toggleSwitch() {
+  let element = document.body;
+  element.classList.toggle("pink");
 }

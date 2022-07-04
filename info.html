@@ -70,13 +70,14 @@
       <h3 class="mt-5">Contact us</h3>
 
       <div class="container contact-us mt-3">
-        <form id="contact-form">
+        <form id="theForm">
           <input
             type="text"
             placeholder="YOUR NAME"
             autocomplete="off"
             autofocus="on"
             id="contact-text-input"
+            style="display: block; margin: 0 auto"
           />
           <input
             type="text"
@@ -84,11 +85,13 @@
             autocomplete="off"
             autofocus="on"
             id="contact-text-input"
+            style="display: block; margin: 0 auto"
           />
           <textarea
             id="msg"
             name="user_message"
             placeholder="YOUR MESSAGE"
+            style="display: block; margin: 0 auto"
           ></textarea>
           <br />
           <input type="submit" value="send message" id="submit" />
@@ -98,5 +101,7 @@
         <i class="fab fa-brands fa-facebook"></i>
       </div>
     </div>
+
+    <script src="app.js"></script>
   </body>
 </html>

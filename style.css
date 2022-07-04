@@ -8,6 +8,7 @@ body {
   background-repeat: no-repeat;
   height: 150vh;
 }
+
 /* navigation - all pages */
 
 .navbar-brand {
@@ -49,6 +50,7 @@ h1 {
   text-align: center;
   margin-top: 50px;
 }
+
 h2 {
   font-family: "Helvetica Neue";
   font-size: 100px;
@@ -68,12 +70,70 @@ h2 {
 
 /* home page */
 
+/* toggle switch to pink  */
+
+input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.toggle-switch label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 50px;
+  height: 25px;
+  background: #fff;
+  display: block;
+  border-radius: 25px;
+  position: relative;
+}
+
+.toggle-switch label:after {
+  content: "";
+  position: absolute;
+  top: 1.5px;
+  left: 1.5px;
+  width: 22.5px;
+  height: 22.5px;
+  background: #93cdcd;
+  border-radius: 22.5px;
+  transition: 0.3s;
+}
+
+.toggle-switch input:checked + label {
+  background: #fff;
+}
+
+.toggle-switch input:checked + label:after {
+  left: calc(100% - 1.5px);
+  transform: translateX(-100%);
+}
+
+.toggle-switch label:active:after {
+  width: 50px;
+}
+
+.toggle-switch {
+  display: flex;
+  position: relative;
+  left: 70%;
+  top: 5%;
+}
+
+.pink {
+  background: linear-gradient(to top, #a37c7d 70%, white 100%);
+}
+
+/* main page */
+
 .bodyButtons {
   margin-top: 100px;
 }
 
 .frontPage,
-.popUp {
+.popUp,
+.front-page a {
   color: #000;
   display: block;
   margin: 0 auto;
@@ -84,7 +144,11 @@ h2 {
   text-transform: uppercase;
   background-color: transparent;
   border: solid 1px #000;
-  transition: 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+a {
+  text-decoration: none;
 }
 
 .frontPage:hover {
@@ -95,6 +159,10 @@ h2 {
 
 #voucher {
   padding: 30px 52px;
+}
+
+button a:hover {
+  color: #fff;
 }
 
 #loyalty {
@@ -112,6 +180,52 @@ h4 {
   margin: 15px;
   position: relative;
   line-height: 20px;
+}
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popuptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: #94cecd;
+  color: #000;
+  text-align: center;
+  padding: 8px 0;
+  position: absolute;
+  bottom: -100%;
+  left: 20%;
+}
+
+/* hide and show popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* menu-page */
@@ -245,8 +359,8 @@ p {
 }
 
 #submit:hover {
-  color: #fff;
-  border: solid 1px #fff;
+  color: rgb(255, 255, 255, 0.5);
+  border: solid 1px rgb(255, 255, 255, 0.5);
   cursor: pointer;
 }
 
@@ -264,6 +378,8 @@ footer {
   background: rgb(255, 255, 255, 0.5);
   position: fixed;
 }
+
+/* responsive */
 
 @media (max-width: 960px) {
   h1 {
@@ -300,61 +416,5 @@ footer {
   hr {
     width: 230px;
     height: 2px;
-  }
-}
-
-/* Popup container */
-.popup {
-  position: relative;
-  display: block;
-  cursor: pointer;
-}
-
-/* The actual popup (appears on top) */
-.popuptext {
-  visibility: hidden;
-  width: 300px;
-  background-color: #94cecd;
-  color: #000;
-  text-align: center;
-  padding: 8px 0;
-  position: absolute;
-  bottom: 125%;
-  left: 49px;
-}
-
-/* Popup arrow */
-.popuptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #fff transparent transparent transparent;
-}
-
-/* Toggle this class when clicking on the popup container (hide and show the popup) */
-.popup .show {
-  visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s;
-}
-
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
   }
 }

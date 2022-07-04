@@ -60,7 +60,7 @@
         GL50 1SD <br />01242 222444
       </p>
 
-      <button class="frontPage">Book a table</button>
+      <button class="frontPage" style="padding: 20px">Book a table</button>
 
       <h3 class="mt-5">Opening times</h3>
       <p>
@@ -84,17 +84,25 @@
             placeholder="YOUR EMAIL"
             autocomplete="off"
             autofocus="on"
-            id="contact-text-input"
+            class="mt-2"
+            id="contact-email-input"
             style="display: block; margin: 0 auto"
           />
           <textarea
+            type="text"
+            class="mt-2"
             id="msg"
             name="user_message"
             placeholder="YOUR MESSAGE"
             style="display: block; margin: 0 auto"
           ></textarea>
           <br />
-          <input type="submit" value="send message" id="submit" />
+          <input
+            type="submit"
+            value="send message"
+            id="submit"
+            onclick="submitForm()"
+          />
         </form>
 
         <i class="fab fa-instagram"></i>

@@ -117,7 +117,7 @@ input[type="checkbox"] {
 .toggle-switch {
   display: flex;
   position: relative;
-  left: 70%;
+  left: 60%;
   top: 5%;
 }
 
@@ -308,6 +308,7 @@ hr {
 }
 
 /* info page */
+
 h3 {
   font-family: "Helvetica Neue";
   font-size: 20px;
@@ -333,6 +334,7 @@ p {
 }
 
 #contact-text-input,
+#contact-email-input,
 #msg {
   padding: 5px;
   border: 1px solid #000;
@@ -359,8 +361,8 @@ p {
 }
 
 #submit:hover {
-  color: rgb(255, 255, 255, 0.5);
-  border: solid 1px rgb(255, 255, 255, 0.5);
+  color: #000;
+  border: solid 1px #000;
   cursor: pointer;
 }
 
@@ -416,5 +418,8 @@ footer {
   hr {
     width: 230px;
     height: 2px;
+  }
+  .toggle-switch {
+    left: 70%;
   }
 }

@@ -32,3 +32,8 @@ function submitCareers() {
     alert(`Thank you ${name}!`);
   }
 }
+
+function signUp() {
+  let signup = document.getElementById("signUp");
+  signup.classList.toggle("show");
+}

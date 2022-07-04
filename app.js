@@ -23,3 +23,12 @@ function submitForm() {
     );
   }
 }
+
+function submitCareers() {
+  let name = document.querySelector("#contact-text-input").value;
+  if (name === "") {
+    alert(`upload your CV!`);
+  } else {
+    alert(`Thank you ${name}!`);
+  }
+}

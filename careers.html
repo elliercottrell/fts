@@ -64,21 +64,26 @@
             autocomplete="off"
             autofocus="on"
             id="contact-text-input"
+            style="display: block; margin: 0 auto"
           />
           <input
             type="file"
             placeholder=""
             autocomplete="off"
-            autofocus="on"
+            autofocus="off"
+            class="mt-2"
             id="file"
+            style="display: block; margin: 0 auto"
           />
           <textarea
             id="msg"
+            class="mt-2"
             name="user_message"
             placeholder="WHY WORK WITH US"
+            style="display: block; margin: 0 auto"
           ></textarea>
           <br />
-          <input type="submit" value="Submit" id="submit" />
+          <input type="submit" value="Submit" id="submit" onclick="submitCareers()" />
         </form>
 
         <i class="fab fa-instagram"></i>

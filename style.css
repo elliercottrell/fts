@@ -381,6 +381,12 @@ footer {
   position: fixed;
 }
 
+/* careers */
+
+#file {
+  background-color: none;
+}
+
 /* responsive */
 
 @media (max-width: 960px) {

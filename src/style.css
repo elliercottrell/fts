@@ -471,7 +471,8 @@ p {
   .popuptext {
     bottom: -100%;
     left: 10%;
-    width: 200px;
+    width: 300px;
+    margin: 0px;
   }
 
   .popuptextTwo {

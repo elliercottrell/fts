@@ -22,10 +22,10 @@ function submitForm() {
 }
 
 //front page - loyalty card popup
-function myPopup() {
+/*function myPopup() {
   let popup = document.getElementById("myPopup");
   popup.classList.toggle("show");
-}
+} */
 
 //careers submit form
 function submitCareers() {

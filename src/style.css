@@ -466,7 +466,7 @@ p {
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 380px) {
   .popuptext {
     bottom: -100%;
     left: 10%;

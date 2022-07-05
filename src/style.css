@@ -3,8 +3,17 @@
   src: url(fonts/typewcond_regular.otf) format("opentype");
 }
 
+:root {
+  --primary-font-family: "Helvetica Neue";
+  --secondary-font-family: "typewriter_condensed";
+  --primary-color: #94cecd;
+  --secondary-color: #ae8688;
+  --highlight-color: #ffffff;
+  --dark-color: #000000;
+}
+
 body {
-  background: linear-gradient(to top, #94cecd 70%, white 100%);
+  background: linear-gradient(to top, #94cecd 70%, #fff 100%);
   background-repeat: no-repeat;
   height: 160vh;
 }
@@ -12,7 +21,7 @@ body {
 /* navigation - all pages */
 
 .navbar-brand {
-  font-family: "Helvetica Neue";
+  font-family: var(--primary-font-family);
   font-weight: 600;
   text-transform: uppercase;
   font-size: 13px;
@@ -25,7 +34,7 @@ body {
 }
 
 .nav-link {
-  border-top: solid 1px #ae8688;
+  border-top: solid 1px var(--secondary-color);
   margin-left: 15px;
   padding: 10px;
 }
@@ -36,14 +45,14 @@ body {
 
 .navbar-nav a {
   margin: 0px;
-  font-family: "Helvetica Neue";
+  font-family: var(--primary-font-family);
   font-style: italic;
   text-transform: uppercase;
   font-size: 13px;
 }
 
 h1 {
-  font-family: "Helvetica Neue";
+  font-family: var(--primary-font-family);
   font-size: 100px;
   font-weight: bold;
   text-transform: uppercase;
@@ -52,7 +61,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Helvetica Neue";
+  font-family: var(--primary-font-family);
   font-size: 100px;
   font-weight: bold;
   text-transform: uppercase;
@@ -61,24 +70,24 @@ h2 {
 }
 
 .fts {
-  color: #000;
+  color: var(--dark-color);
   text-decoration: none;
 }
 .fts:hover {
-  color: #000;
+  color: var(--dark-color);
 }
 
 /*footer all pages */
 
 .fab {
-  color: #fff;
+  color: var(--highlight-color);
   font-size: 25px;
   padding: 10px;
   transition: all 200ms ease-in-out;
 }
 
 .fab:hover {
-  color: #000;
+  color: var(--dark-color);
   transition: all 200ms ease-in-out;
   cursor: pointer;
 }
@@ -92,7 +101,6 @@ footer {
 /* home page */
 
 /* toggle switch to pink  */
-
 input[type="checkbox"] {
   height: 0;
   width: 0;
@@ -104,7 +112,7 @@ input[type="checkbox"] {
   text-indent: -9999px;
   width: 50px;
   height: 25px;
-  background: #fff;
+  background: var(--highlight-color);
   display: block;
   border-radius: 25px;
   position: relative;
@@ -117,13 +125,13 @@ input[type="checkbox"] {
   left: 1.5px;
   width: 22.5px;
   height: 22.5px;
-  background: #b28789;
+  background: var(--secondary-color);
   border-radius: 22.5px;
   transition: 0.3s;
 }
 
 .toggle-switch input:checked + label {
-  background: #fff;
+  background: var(--highlight-color);
 }
 
 .toggle-switch input:checked + label:after {
@@ -155,16 +163,16 @@ input[type="checkbox"] {
 .frontPage,
 .popUp,
 .front-page a {
-  color: #000;
+  color: var(--dark-color);
   display: block;
   margin: 0 auto;
   margin-bottom: 50px;
   text-align: center;
-  font-family: "typewriter_condensed";
+  font-family: var(--secondary-font-family);
   font-size: 20px;
   text-transform: uppercase;
   background-color: transparent;
-  border: solid 1px #000;
+  border: solid 1px var(--dark-color);
   transition: all 300ms ease-in-out;
 }
 
@@ -173,8 +181,8 @@ a {
 }
 
 .frontPage:hover {
-  color: white;
-  border: solid 1px #fff;
+  color: var(--highlight-color);
+  border: solid 1px var(--highlight-color);
   cursor: pointer;
 }
 
@@ -183,7 +191,7 @@ a {
 }
 
 button a:hover {
-  color: #fff;
+  color: var(--highlight-color);
 }
 
 #loyalty,
@@ -192,11 +200,11 @@ button a:hover {
 }
 
 h4 {
-  font-family: "Helvetica Neue";
+  font-family: var(--primary-font-family);
   font-weight: 500;
   text-transform: uppercase;
   font-size: 13px;
-  border: solid 1px #fff;
+  border: solid 1px var(--highlight-color);
   text-align: center;
   padding: 30px;
   margin: 15px;
@@ -215,8 +223,8 @@ h4 {
 .popuptext {
   visibility: hidden;
   width: 300px;
-  background-color: #94cecd;
-  color: #000;
+  background-color: var(--primary-color);
+  color: var(--dark-color);
   text-align: center;
   padding: 8px 0;
   position: absolute;
@@ -263,19 +271,19 @@ h4 {
 }
 li {
   list-style: none;
-  font-family: "Helvetica Neue";
+  font-family: var(--primary-font-family);
   font-size: 13px;
   font-weight: 400;
   font-style: italic;
 }
 
 .bordered {
-  border: 1px solid #000;
+  border: 1px solid var(--dark-color);
   padding: 10px;
   margin-top: 10px;
 }
 .menuBody label {
-  font-family: "Helvetica Neue";
+  font-family: var(--primary-font-family);
   font-weight: bold;
   font-size: 14px;
   cursor: pointer;
@@ -289,18 +297,18 @@ ul {
   text-align: left;
 }
 hr {
-  color: #000;
+  color: var(--dark-color);
   width: 90px;
   height: 1px;
-  background-color: #000;
+  background-color: var(--dark-color);
   opacity: 100;
 }
 .black-content li {
-  color: #fff;
+  color: var(--highlight-color);
 }
 
 .menuBody label:hover {
-  color: #fff;
+  color: var(--highlight-color);
 }
 .menuBody input:checked ~ .black-content {
   max-height: 100%;
@@ -333,7 +341,7 @@ hr {
 /* info page */
 
 h3 {
-  font-family: "Helvetica Neue";
+  font-family: var(--primary-font-family);
   font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
@@ -341,7 +349,7 @@ h3 {
 }
 
 p {
-  font-family: "typewriter_condensed";
+  font-family: var(--secondary-font-family);
   text-transform: uppercase;
   font-weight: 300;
   font-size: 20px;
@@ -352,7 +360,7 @@ p {
   visibility: hidden;
   width: 300px;
   background-color: none;
-  color: #000;
+  color: var(--dark-color);
   text-align: center;
   padding: 8px 0;
   position: absolute;
@@ -362,7 +370,7 @@ p {
 .contact-us {
   text-align: center;
   margin: 0 auto;
-  font-family: "typewriter_condensed";
+  font-family: var(--secondary-font-family);
   font-size: 20px;
   text-transform: uppercase;
 }
@@ -371,11 +379,11 @@ p {
 #contact-email-input,
 #msg {
   padding: 5px;
-  border: 1px solid #000;
+  border: 1px solid var(--dark-color);
   border-radius: 0px;
   background: transparent;
   margin: 10px;
-  color: #fff;
+  color: var(--highlight-color);
 }
 
 #submit {
@@ -383,25 +391,25 @@ p {
   margin: 0 auto;
   margin-bottom: 30px;
   text-align: center;
-  font-family: "typewriter_condensed";
+  font-family: var(--secondary-font-family);
   font-size: 20px;
   text-transform: uppercase;
   padding: 20px;
   background-color: transparent;
-  border: solid 1px #fff;
+  border: solid 1px var(--highlight-color);
   border-radius: 0px;
   transition: 300ms ease-in-out;
-  color: #fff;
+  color: var(--highlight-color);
 }
 
 #submit:hover {
-  color: #000;
-  border: solid 1px #000;
+  color: var(--dark-color);
+  border: solid 1px var(--dark-color);
   cursor: pointer;
 }
 
 .sign-up {
-  border: 1px solid #fff;
+  border: 1px solid var(--highlight-color);
   padding: 10px;
   margin: 0 auto;
   text-align: center;
@@ -409,7 +417,7 @@ p {
   position: fixed;
 }
 
-/* careers */
+/* careers page */
 
 #file {
   background-color: none;
@@ -434,14 +442,14 @@ p {
 
   li {
     list-style: none;
-    font-family: "Helvetica Neue";
+    font-family: var(--primary-font-family);
     font-size: 25px;
     font-weight: 300;
     font-style: italic;
   }
 
   .menuBody label {
-    font-family: "Helvetica Neue";
+    font-family: var(--primary-font-family);
     font-weight: bold;
     font-size: 40px;
     display: block;

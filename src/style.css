@@ -465,3 +465,10 @@ p {
     left: 70%;
   }
 }
+
+@media (max-width: 380px) {
+  .popuptext {
+    bottom: -100%;
+    left: 10%;
+  }
+}

@@ -100,7 +100,7 @@ footer {
 
 /* home page */
 
-/* toggle switch to pink  */
+/* toggle switch to pink  
 input[type="checkbox"] {
   height: 0;
   width: 0;
@@ -153,6 +153,7 @@ input[type="checkbox"] {
 .pink {
   background: linear-gradient(to top, #a37c7d 70%, white 100%);
 }
+
 
 /* main page */
 

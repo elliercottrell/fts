@@ -470,5 +470,6 @@ p {
   .popuptext {
     bottom: -100%;
     left: 10%;
+    width: 300px;
   }
 }

@@ -106,6 +106,7 @@ input[type="checkbox"] {
   width: 0;
   visibility: hidden;
 }
+/*make sure to add this to stop the element hanging over the side of the page!*/
 .toggle-switch {
   margin: 0px;
   max-width: 150px;

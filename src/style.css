@@ -217,6 +217,7 @@ h4 {
   position: relative;
   display: block;
   cursor: pointer;
+  margin: 0px;
 }
 
 /* The actual popup (appears on top) */
@@ -471,5 +472,9 @@ p {
     bottom: -100%;
     left: 10%;
     width: 300px;
+  }
+  .popuptextTwo {
+    bottom: 10%;
+    left: 0%;
   }
 }

@@ -1,8 +1,4 @@
-function myPopup() {
-  let popup = document.getElementById("myPopup");
-  popup.classList.toggle("show");
-}
-
+//switch to change background colour
 function toggleSwitch() {
   let element = document.body;
   element.classList.toggle("pink");
@@ -11,6 +7,7 @@ function toggleSwitch() {
 let uname = document.querySelector("#contact-text-input");
 let email = document.querySelector("#contact-email-input");
 let message = document.querySelector("#msg");
+
 function submitForm() {
   if (uname.value === "") {
     alert(`Hey, fill me out first!`);
@@ -24,6 +21,13 @@ function submitForm() {
   }
 }
 
+//front page - loyalty card popup
+function myPopup() {
+  let popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+
+//careers submit form
 function submitCareers() {
   let name = document.querySelector("#contact-text-input").value;
   if (name === "") {
@@ -31,9 +35,4 @@ function submitCareers() {
   } else {
     alert(`Thank you ${name}!`);
   }
-}
-
-function signUp() {
-  let signup = document.getElementById("signUp");
-  signup.classList.toggle("show");
 }

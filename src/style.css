@@ -212,7 +212,7 @@ h4 {
   line-height: 20px;
 }
 
-/* Popup container 
+/* Popup container */
 .popup {
   position: relative;
   display: block;
@@ -220,7 +220,7 @@ h4 {
   margin: 0px;
 }
 
-/* The actual popup (appears on top) 
+/* The actual popup (appears on top) */
 .popuptext {
   visibility: hidden;
   width: 300px;
@@ -233,7 +233,7 @@ h4 {
   left: 20%;
 }
 
-/* hide and show popup 
+/* hide and show popup */
 .popup .show {
   visibility: visible;
 
@@ -241,7 +241,7 @@ h4 {
   animation: fadeIn 1s;
 }
 
-/* Add animation (fade in popup) 
+/* Add animation (fade in popup) */
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;

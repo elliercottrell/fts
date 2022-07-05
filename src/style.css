@@ -1,6 +1,6 @@
 @font-face {
   font-family: "typewriter_condensed";
-  src: url(fonts/typewcond_regular.otf) format("opentype");
+  src: url(/fonts/typewcond_regular.otf) format("opentype");
 }
 
 :root {
